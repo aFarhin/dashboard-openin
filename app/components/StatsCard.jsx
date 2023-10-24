@@ -13,7 +13,7 @@ import { TransactionsIcon, TransactionsIcon1, TransactionsIcon2, TransactionsIco
       total: "$2,129,430",
       bcg: "#7FCD93",
       icon: <TransactionsIcon />,
-      per : '2.5%'
+      per : '+2.5%'
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ import { TransactionsIcon, TransactionsIcon1, TransactionsIcon2, TransactionsIco
       total: '1,520',
       bcg: "#DEBF85",
       icon: <TransactionsIcon1/>,
-      per : '2.5%'
+      per : '+1.7%'
     },
     {
       id: 3,
@@ -29,7 +29,7 @@ import { TransactionsIcon, TransactionsIcon1, TransactionsIcon2, TransactionsIco
       total: '9,721',
       bcg: "#ECA4A4",
       icon: <TransactionsIcon2/>,
-      per : '2.5%'
+      per : '+1.4%'
     },
     {
       id: 4,
@@ -37,7 +37,7 @@ import { TransactionsIcon, TransactionsIcon1, TransactionsIcon2, TransactionsIco
       total: '9,721',
       bcg: "#A9B0E5",
       icon: <TransactionsIcon3/>,
-      per : '2.5%'
+      per : '+4.2%'
     },
   ]
   
@@ -48,17 +48,19 @@ import { TransactionsIcon, TransactionsIcon1, TransactionsIcon2, TransactionsIco
         {statsData.map((stat) => {
           const { id, title, total, icon, bcg, per } = stat
           return (
-            <article
+            <article 
               key={id}
-              style={{ backgroundColor: 'white!important', boxShadow:'2px 2px 10px 2px #E0E0E0',
+              style={{ boxShadow:'2px 2px 10px 2px #E0E0E0',
 flexShrink: '0' }}
-              className="  rounded-[20px] py-5 md:px-5 px-5   "
+              className=" rounded-[20px] py-5 md:px-5 px-5
+               bg-white hover:bg-blue-100
+               "
             >
              <span
   style={{
     backgroundColor: bcg,
-    width: '20%',
-    height: '33%',
+    width: '2rem',
+    height: '2rem',
     padding: '.2rem',
     textAlign: 'center',
   }}

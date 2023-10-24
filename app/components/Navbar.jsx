@@ -6,13 +6,15 @@ import { useState } from "react"
 import SideNavigation from "./SideNavigation"
 import { signOut, useSession } from "next-auth/react"
 import { usePathname } from "next/navigation"
+import { useRouter } from "next/navigation"
+
 
 
 const Navbar = () => {
   const [showSideNavigation, setShowSideNavigation] = useState(false)
   const { data: session } = useSession()
   const pathname = usePathname()
-  
+  const router = useRouter()
 
   // Open Side Navigation
   const openSideNavigation = () => {
@@ -22,7 +24,9 @@ const Navbar = () => {
   const closeSideNavigation = () => {
     setShowSideNavigation(false)
   }
-  
+  if(!session){
+    router.push("/login")
+  }
 // console.log(useSession())
 
   return (

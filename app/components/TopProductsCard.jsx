@@ -13,7 +13,7 @@ const TopProductsCard = () => {
   return (
     <article
      style={{ boxShadow:'2px 2px 10px 2px #E0E0E0'}}
-     className="bg-white rounded-[20px] py-[30px] lg:px-[40px] px-8 space-y-[20px]">
+     className="bg-white hover:bg-blue-100 rounded-[20px] py-[30px] lg:px-[40px] px-8 space-y-[20px]">
       <div className="flex justify-between items-center">
         <h4 className="text-lg font-bold">Top products</h4>
         <button

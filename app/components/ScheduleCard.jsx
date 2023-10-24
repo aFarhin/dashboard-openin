@@ -46,7 +46,7 @@ console.log('fommmmmmm', formData)
 
   return (
     <div >
-     <article  style={{ boxShadow:'2px 2px 10px 2px #E0E0E0'}} className="bg-white rounded-[20px] py-[30px]  lg:px-[40px] px-8 space-y-7 ">
+     <article  style={{ boxShadow:'2px 2px 10px 2px #E0E0E0'}} className="bg-white rounded-[20px] py-[30px] hover:bg-blue-100 lg:px-[40px] px-8 space-y-7 ">
    
      {Object.keys(formData).every((key) => formData[key] === '') ? (
       <div className=' flex justify-center items-center h-[100%]  p-20 flex-col'>
