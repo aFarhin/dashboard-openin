@@ -1,5 +1,5 @@
 "use client"
-
+import '../dashboard/styles.css'
 import LineChartContainer from "@/app/components/LineChartContainer"
 import ScheduleCard from "@/app/components/ScheduleCard"
 import StatsCard from "@/app/components/StatsCard"

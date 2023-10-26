@@ -3,13 +3,14 @@
 import { links } from "../util/links"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-
+import '../(home)/dashboard/styles.css'
 const Sidebar = ({ className, closeSideNavigation }) => {
   const pathname = usePathname()
   return (
-    <aside style={{ boxShadow:'2px 2px 10px 2px #E0E0E0'}}
-      className={` ${className} bg-blue-600 text-white h-[100%] rounded-[20px] flex flex-col justify-between items-center py-[20px] px-[50px]`}
-    >
+    <aside
+  style={{ boxShadow: '2px 2px 10px 2px #E0E0E0' }}
+  className={` ${className} bg-blue-600 text-white h-[100%] rounded-[20px] flex flex-col justify-between items-center py-[20px] px-[50px]`}
+>
       <div className=" w-full space-y-[60px]  ">
         <h1 className=" font-bold text-4xl text-white ">Board.</h1>
         {/* Links */}

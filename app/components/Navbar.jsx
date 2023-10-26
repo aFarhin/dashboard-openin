@@ -48,9 +48,9 @@ const Navbar = () => {
             <input
               type="text"
               placeholder="Search..."
-              className=" placeholder:text-[#B0B0B0] placeholder:text-sm placeholder:montserrat-font py-[6px] px-3 rounded-[10px] md:w-[180px] w-40 outline-none "
+              className=" placeholder:text-[#B0B0B0] placeholder:text-m placeholder:montserrat-font py-[6px] px-5 rounded-[10px] md:w-[280px] w-50 outline-none "
             />
-            <span className="pointer-events-none absolute right-0 mr-3  ">
+            <span className="pointer-events-none absolute right-0 mr-8  ">
               <SearchIcon />
             </span>
           </div>

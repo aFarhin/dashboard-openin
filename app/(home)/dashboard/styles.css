@@ -1,0 +1,57 @@
+
+.my-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem; 
+    margin-bottom:2rem;
+    margin-top: 3rem;
+   
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @media (min-width: 1024px) {
+        grid-gap: 1.5rem; 
+    }
+
+  
+    animation-name: fadeIn; 
+    animation-duration: 2s; 
+    animation-timing-function: ease; 
+    animation-fill-mode: forwards; 
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 2;
+        transform: translateX(0); 
+    }
+}
+
+.slidebar {
+    width: 340px;
+    position: sticky;
+    top: 0;
+  }
+  
+  .slidebar{
+    animation: fadeIn 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  
+.chart {
+    width: 340px;
+    position: sticky;
+    top: 0;
+  }
+  
+
+  .chart {
+    animation: fadeIn 2s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  

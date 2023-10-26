@@ -11,7 +11,7 @@ const ScheduleCard = () => {
     instaLink: '',
     youtubeLink:''
   });
-console.log('fommmmmmm', formData)
+console.log('form data', formData)
   const openModal = () => {
     setIsModalOpen(true);
     setCurrentStep('basic');
@@ -32,6 +32,15 @@ console.log('fommmmmmm', formData)
   };
   const handleFormSubmit = (e) => {
     e.preventDefault();
+  if (!formData.email) {
+    alert("Email is required.");
+    return;
+  }
+
+  if (!formData.phoneNumber) {
+    alert("Phone number is required.");
+    return;
+  }
     if (currentStep === 'basic') {
       setCurrentStep('social'); 
     } else if (currentStep === 'social') {
@@ -117,8 +126,6 @@ console.log('fommmmmmm', formData)
       
          </div>
       )}
-      
-
       </div>
 
     </div></>

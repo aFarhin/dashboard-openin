@@ -1,6 +1,7 @@
 "use client"
 import React, {useState} from 'react'
 import Link from "next/link"
+import '../styles/styles.css'
 import {GoogleIcon, AppleIcon, GithubIcon, TwitterIcon, DiscordIcon, LinkedinIcon} from "../util/icons"
 import {signIn ,useSession} from "next-auth/react"
 import { useRouter } from 'next/navigation'
@@ -51,31 +52,28 @@ function Login() {
     
   return (
     <>
-    <main className='flex h-screen'>
+    <main className='flex h-screen' style={{backgroundColor:'#F5F5F5'}}>
     
-    <section
-    style={{ background: 'linear-gradient(to bottom right, #286DE0)',
-    borderRadius: '0% 0%  20% 0%',
-    backgroundColor: '#3490dc', 
-    width: '720px'
-  }}
-  className="hidden md:flex flex-col justify-center items-center">
+    <section className="slanted-div">
+    <diV className='logo'> <h4>LOGO</h4></diV>
+ 
   <div className="flex flex-col justify-end items-center h-[50%]">
-    <div >
-      <h1 className="font-bold text-7xl text-white">Board.</h1>
+    <div>
+    <h1  className='response'> Board. </h1>
+
     </div>
   </div>
 
-  <div 
-   className="flex flex-col justify-end items-center h-[50%]">
-    <div className="mt-10 py-10 ">
-      <button className="mr-10">
+  <div className="flex flex-col justify-end items-center h-[50%]">
+    <div className="md:mr-20 py-5 md:py-10">
+    <div className='btn'></div>
+      <button className="mr-5 md:mr-10">
         <GithubIcon />
       </button>
-      <button className="mr-10">
+      <button className="mr-5 md:mr-10">
         <TwitterIcon />
       </button>
-      <button className="mr-10">
+      <button className="mr-5 md:mr-10">
         <LinkedinIcon />
       </button>
       <button>
@@ -85,7 +83,7 @@ function Login() {
   </div>
 </section>
 
-<section className="bg-[#F5F5F5] w-full px-5 flex flex-col justify-center items-center h-screen">
+<section className="bg-#F5F5F5 w-full px-5 flex flex-col justify-center items-center h-screen">
   <div className="flex-none md:flex justify-center items-center ">
             <div  className=" space-y-6">
               <div className="">

@@ -4,6 +4,7 @@
 //     TotalUsersIcon,
 //     TransactionsIcon2,
 //   } from "../util/icon"
+import '../(home)/dashboard/styles.css'
 import { TransactionsIcon, TransactionsIcon1, TransactionsIcon2, TransactionsIcon3 } from "../util/icon/icon"
   
   const statsData = [
@@ -44,7 +45,7 @@ import { TransactionsIcon, TransactionsIcon1, TransactionsIcon2, TransactionsIco
   const StatsCard = () => {
     return (
       <section
-      className=" grid grid-cols-2 gap-5 lg:grid-cols-4 md:grid-cols-2 md:gap-6 my-10 ">
+      className="my-grid ">
         {statsData.map((stat) => {
           const { id, title, total, icon, bcg, per } = stat
           return (
