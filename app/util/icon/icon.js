@@ -1,7 +1,4 @@
-import one from './Vector.png'
-import two from './Vector1.png'
-import three from './Vector2.png'
-import four from './Vector3.png'
+
 
 export const TransactionsIcon = () => {
     return (

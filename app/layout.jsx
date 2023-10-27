@@ -1,5 +1,5 @@
 import './globals.css'
-import  AuthProvider   from "@/app/components/AuthProvider"
+import  AuthProvider   from "../app/components/AuthProvider"
 
 import { Lato, Montserrat, Open_Sans } from "next/font/google"
 
